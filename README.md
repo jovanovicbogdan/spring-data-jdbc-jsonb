@@ -1,5 +1,3 @@
-## Run
-
 ## Storing Data as JSONB in PostgreSQL
 
 Users table that contains `user_details JSONB` column
