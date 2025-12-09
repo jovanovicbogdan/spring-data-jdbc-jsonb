@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-data-jdbc-jsonb
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jsonb
+    username: postgres
+    password: rootpassword
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      data-source-properties:
+        stringtype: unspecified
+  sql:
+    init:
+      mode: always
+logging:
+  level:
+    org.springframework.jdbc: trace
+    dev.bogdanjovanovic: trace
