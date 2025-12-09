@@ -132,7 +132,7 @@ Start `postgresql` container and `adminer` web based database manager.
 docker compose up -d
 ```
 
-Access `adminer` at http://localhost:8080. Server is `db`, username is `postgres` and password is `rootpassword`.
+Access `adminer` at http://localhost:8000. Server is `db`, username is `postgres` and password is `rootpassword`.
 
 Start the application `src/main/java/dev/bogdanjovanovic/springdatajdbcjsonb/Application.java`.
 
