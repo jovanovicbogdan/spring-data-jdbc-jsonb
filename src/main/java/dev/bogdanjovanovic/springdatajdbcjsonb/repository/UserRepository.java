@@ -6,7 +6,7 @@ import org.springframework.data.repository.Repository;
 
 public interface UserRepository extends Repository<UserEntity, Long> {
 
-  UserEntity save(UserEntity user);
+  void saveAll(Iterable<UserEntity> users);
 
   List<UserEntity> findAll();
 

@@ -124,6 +124,25 @@ CommandLineRunner runner(final UserRepository userRepository) {
 }
 ```
 
+## Run Locally
+
+Start `postgresql` container and `adminer` web based database manager.
+
+```shell
+docker compose up -d
+```
+
+Access `adminer` at http://localhost:8080. Server is `db`, username is `postgres` and password is `rootpassword`.
+
+Start the application `src/main/java/dev/bogdanjovanovic/springdatajdbcjsonb/Application.java`.
+
+In the console will be printed saved database records
+
+```
+UserEntity(userId=1, email=johndoe@email.com, password=password, userDetails=UserDetails(address=Address(city=Barcelona, postalCode=9082, street=Main street 2), birthDate=1990-01-01))
+UserEntity(userId=2, email=janedoe@email.com, password=password, userDetails=UserDetails(address=Address(city=Berlin, postalCode=4109, street=Street 32), birthDate=1980-04-18))
+```
+
 ## Common Issues
 
 If you are getting an error similar to the one below
